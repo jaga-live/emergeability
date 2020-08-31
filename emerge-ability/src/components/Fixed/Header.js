@@ -23,24 +23,29 @@ const Header = (props) => {
                 },
               },
               {
-                name: "Why KidSens ?",
+                name: "Our Initiatives",
                 onClick: () => {
-                  document.getElementById("why-kidSens").scrollIntoView();
+                  document.getElementById("our-initiatives").scrollIntoView();
                 },
               },
               {
-                name: "Get involved",
+                name: "Our Mission",
                 onClick: () => {
-                  document.getElementById("get-involved").scrollIntoView();
+                  document.getElementById("our-mission").scrollIntoView();
+                },
+              },
+              {
+                name: "Our Vision",
+                onClick: () => {
+                  document.getElementById("our-vision").scrollIntoView();
                 },
               },
             ]}
           />
         ),
       },
-      { name: "Product", to: "#product" },
-      { name: "Team", to: "#team" },
-      { name: "Contact", to: "#contact" },
+      { name: "Meet our team", to: "#what-we-do" },
+      { name: "Sign Up", to: "#signup" },
     ]);
   }, []);
 
