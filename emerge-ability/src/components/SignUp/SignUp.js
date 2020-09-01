@@ -164,8 +164,8 @@ const SignUp = (props) => {
           />
           <br />
           <div className="d-flex justify-content-center">
-            <Button disabled={!valid()} type="submit" color="primary">
-              Submit
+            <Button disabled={!valid()} type="submit" color="success">
+              Sign Up
             </Button>
           </div>
         </form>
