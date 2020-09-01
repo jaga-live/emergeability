@@ -5,6 +5,7 @@ import Carousel from "./components/UI/Carousel/Carousel";
 import { carouselData } from "./components/UI/Carousel/CarouselImages";
 import MeetOurTeam from "./components/MeetOurTeam/MeetOurTeam";
 import AboutUs from "./components/About Us/AboutUs";
+import SignUp from "./components/SignUp/SignUp";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Carousel images={carouselData} controls={false} />
       <AboutUs />
       <MeetOurTeam />
+      <SignUp />
     </div>
   );
 }

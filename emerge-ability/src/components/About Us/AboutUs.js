@@ -26,7 +26,7 @@ const AboutUs = (props) => {
               and consultancy.{" "}
             </p>
             <br />
-            <h3>
+            <h3 id="our-mission">
               <span className="blue">OUR MISSI</span>
               <span className="green">ON</span>
             </h3>
@@ -38,7 +38,7 @@ const AboutUs = (props) => {
               ecosystem to bring education and employment into the 21st Century.
             </p>
             <br />
-            <h3>
+            <h3 id="our-vision">
               <span className="blue">OUR VISI</span>
               <span className="green">ON</span>
             </h3>
