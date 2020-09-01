@@ -1,0 +1,13 @@
+.team-image {
+  width: 250px;
+  height: 350px;
+  margin: 10px 0;
+  margin-left: 30px;
+}
+
+@media (max-width: 600px) {
+  .team-image {
+    width: 100px;
+    height: 150px;
+  }
+}

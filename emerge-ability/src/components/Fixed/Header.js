@@ -44,7 +44,7 @@ const Header = (props) => {
           />
         ),
       },
-      { name: "Meet our team", to: "#what-we-do" },
+      { name: "Meet our team", to: "#meet-our-team" },
       { name: "Sign Up", to: "#signup" },
     ]);
   }, []);
