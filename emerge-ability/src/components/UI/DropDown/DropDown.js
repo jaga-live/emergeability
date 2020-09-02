@@ -19,7 +19,12 @@ const MyDropDown = (props) => {
       nav={props.nav}
       inNavbar={props.inNavbar}
     >
-      <DropdownToggle caret color="primary" nav={props.nav}>
+      <DropdownToggle
+        caret
+        color="primary"
+        nav={props.nav}
+        style={{ color: props.color ? props.color : "white" }}
+      >
         {props.placeholder}
       </DropdownToggle>
       <DropdownMenu
@@ -29,7 +34,6 @@ const MyDropDown = (props) => {
       >
         {props.options.map((el, index) => (
           <DropdownItem
-            style={{ outline: "none" }}
             onClick={() => {
               props.closeOnClick ? setIsOpen(false) : setIsOpen(true);
               if (props.onClick) {
@@ -45,7 +49,14 @@ const MyDropDown = (props) => {
             header={el.isHeading}
             divider={el.isDivider}
           >
-            {el.name}
+            <p
+              style={{
+                outline: "none",
+                color: props.color ? props.color : "white",
+              }}
+            >
+              {el.name}
+            </p>
           </DropdownItem>
         ))}
       </DropdownMenu>

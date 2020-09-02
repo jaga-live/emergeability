@@ -6,15 +6,17 @@ import { carouselData } from "./components/UI/Carousel/CarouselImages";
 import MeetOurTeam from "./components/MeetOurTeam/MeetOurTeam";
 import AboutUs from "./components/About Us/AboutUs";
 import SignUp from "./components/SignUp/SignUp";
-import SpecialPara from "./components/SpecialPara/SpecialPara";
+// import SpecialPara from "./components/SpecialPara/SpecialPara";
 import Footer from "./components/Fixed/Footer/Footer";
+import FutureDiv from "./components/FutureDiv/FutureDiv";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-pale-sandal">
       <Header />
       <Carousel images={carouselData} controls={false} />
-      <SpecialPara />
+      {/* <SpecialPara /> */}
+      <FutureDiv />
       <AboutUs />
       <MeetOurTeam />
       <SignUp />

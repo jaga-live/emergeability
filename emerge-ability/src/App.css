@@ -32,7 +32,8 @@
 }
 
 .heading {
-  color: #3e86c6;
+  /* color: #3e86c6; */
+  color: #cc5417;
   padding-bottom: 20px;
 }
 
@@ -40,8 +41,20 @@
   color: #8faf3d;
 }
 
+.dark {
+  color: #1d2434 !important;
+}
+
 .blue {
   color: #3e86c6;
+}
+
+.dark-blue {
+  color: #3e55c6;
+}
+
+.orange {
+  color: #cc5417;
 }
 
 .zero {
@@ -109,6 +122,10 @@ label {
 
 .bg-green {
   background-color: #78b16c;
+}
+
+.bg-pale-sandal {
+  background-color: #fdffec;
 }
 
 .bullet {

@@ -16,13 +16,24 @@ const NavigationBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div style={{ textAlign: "left" }}>
-      <Navbar color={props.color ? props.color : "light"} light expand="md">
+    <div style={{ textAlign: "left" }} className="my-navbar-fixed">
+      <Navbar
+        color={props.backgroundColor ? props.backgroundColor : "light"}
+        style={{ backgroundColor: props.backgroundColor }}
+        light={props.light}
+        expand="md"
+        tabs
+      >
         <NavbarToggler
           style={{ outline: "none", border: "none" }}
           onClick={toggle}
         />
-        <NavbarBrand href="/">{props.brand ? props.brand : null}</NavbarBrand>
+        <NavbarBrand
+          href="/"
+          style={{ color: props.navLinkColor ? props.navLinkColor : "white" }}
+        >
+          {props.brand ? props.brand : null}
+        </NavbarBrand>
         <Collapse isOpen={isOpen} navbar>
           <Nav
             className="mynavbar"
@@ -31,10 +42,20 @@ const NavigationBar = (props) => {
           >
             {props.routes.map((el, index) =>
               el.component ? (
-                <NavItem key={index}> {el.component}</NavItem>
+                <NavItem className="mynavitem" key={index}>
+                  {" "}
+                  {el.component}
+                </NavItem>
               ) : (
-                <NavItem key={index}>
-                  <NavLink href={el.to}>{el.name}</NavLink>
+                <NavItem className="mynavitem" key={index}>
+                  <NavLink
+                    style={{
+                      color: props.navLinkColor ? props.navLinkColor : "black",
+                    }}
+                    href={el.to}
+                  >
+                    {el.name}
+                  </NavLink>
                 </NavItem>
               )
             )}

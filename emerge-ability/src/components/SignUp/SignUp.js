@@ -47,10 +47,12 @@ const SignUp = (props) => {
   };
 
   return (
-    <div className="give-more-top-space bg-green" id="signup">
+    <div className="give-more-top-space" id="signup">
       <div className="heading">
-        <h3 className="white">Signup to become a Champion</h3>
-        <GreenLine color="coral" />
+        <h3>
+          Signup to become a <span className="dark-blue">Champion</span>
+        </h3>
+        <GreenLine color="#ffe5b0" />
       </div>
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLScXxlMkISdHvFo39jmWA56Az1f1Vift3GdYTAw7oeeOFSU3Fg/viewform?embedded=true"

@@ -10,3 +10,28 @@
     height: 150px;
   }
 }
+
+.contact-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+}
+.contact-social-media img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.contact-social-media p {
+  margin: 0;
+  font-size: x-small;
+}

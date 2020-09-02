@@ -14,6 +14,7 @@ const Header = (props) => {
           <DropDown
             nav
             inNavbar
+            color="black"
             placeholder="About Us"
             options={[
               {
@@ -51,12 +52,15 @@ const Header = (props) => {
 
   return (
     <NavigationBar
+      backgroundColor="#A5997F"
+      navLinkColor="black"
       brand={
-        <img
-          className="top-logo"
-          src={require("../../../assets/images/top-logo.png")}
-          alt="logo"
-        />
+        "Emerge Ability"
+        // <img
+        //   className="top-logo"
+        //   src={require("../../../assets/images/top-logo.png")}
+        //   alt="logo"
+        // />
       }
       routes={HeaderRoutes}
     />

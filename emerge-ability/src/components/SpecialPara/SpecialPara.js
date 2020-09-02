@@ -1,12 +1,14 @@
 import React from "react";
 import "./SpecialPara.css";
 import ScrollAnimation from "react-animate-on-scroll";
+import GreenLine from "../UI/GreenLine/GreenLine";
 
 const SpecialPara = (props) => {
   return (
     <div className="give-more-top-space give-more-bottom-space bg-orange white SpecialPara">
       <ScrollAnimation animateIn="animate__zoomIn">
         <h1 className="animate__zoomI">Neurodiversity</h1>
+        <GreenLine />
         <br />
       </ScrollAnimation>
       <p>

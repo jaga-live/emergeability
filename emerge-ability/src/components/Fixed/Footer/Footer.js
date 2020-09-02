@@ -4,8 +4,8 @@ import "./Footer.css";
 const Footer = (props) => {
   return (
     <div>
-      <div className="bg-blue Footer d-flex justify-content-between">
-        <h3 className="white text-left">Emerge Ability</h3>
+      <div className="Footer d-flex justify-content-between">
+        <h3 className="text-left">Emerge Ability</h3>
         <div className="contact-social-media">
           <img
             src={require("../../../assets/images/icons/social-icons/facebook.png")}
@@ -23,7 +23,7 @@ const Footer = (props) => {
             name="instagram"
           />
         </div>
-        <p className="white text-left">&copy; copyright by emerge ability</p>
+        <p className="text-left">&copy; copyright by emerge ability</p>
       </div>
     </div>
   );
