@@ -1,0 +1,11 @@
+.SpecialPara {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.points {
+  text-align: left;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}

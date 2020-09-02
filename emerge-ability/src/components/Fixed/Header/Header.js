@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import NavigationBar from "./NavigationBar/NavigationBar";
-import DropDown from "../UI/DropDown/DropDown";
+import DropDown from "../../UI/DropDown/DropDown";
 
 const Header = (props) => {
   const [HeaderRoutes, setHeadetRoutes] = useState([]);
@@ -31,20 +31,20 @@ const Header = (props) => {
               {
                 name: "Our Mission",
                 onClick: () => {
-                  document.getElementById("our-mission").scrollIntoView();
+                  document.getElementById("about-us").scrollIntoView();
                 },
               },
               {
                 name: "Our Vision",
                 onClick: () => {
-                  document.getElementById("our-vision").scrollIntoView();
+                  document.getElementById("about-us").scrollIntoView();
                 },
               },
             ]}
           />
         ),
       },
-      { name: "Meet our team", to: "#meet-our-team" },
+      { name: "Meet the team", to: "#meet-the-team" },
       { name: "Sign Up", to: "#signup" },
     ]);
   }, []);
@@ -54,7 +54,7 @@ const Header = (props) => {
       brand={
         <img
           className="top-logo"
-          src={require("../../assets/images/top-logo.png")}
+          src={require("../../../assets/images/top-logo.png")}
           alt="logo"
         />
       }

@@ -2,8 +2,24 @@
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .give-top-space {
   padding-top: 50px;
+}
+
+.give-more-top-space {
+  padding-top: 150px;
+}
+
+.give-bottom-space {
+  padding-bottom: 50px;
+}
+
+.give-more-bottom-space {
+  padding-bottom: 150px;
 }
 
 @media (max-width: 600px) {
@@ -45,4 +61,66 @@
 label {
   color: #3f4242;
   font-weight: 500;
+}
+
+.bg-sandal {
+  background-color: #d4ba8b;
+}
+
+.bg-blue {
+  background-color: #3e86c6;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-pink {
+  background-color: #ff52f9;
+}
+
+.bg-violet {
+  background-color: #7265d9;
+}
+
+.bg-pale-violet {
+  background-color: #ff52f9;
+}
+
+.bg-faded-dark {
+  background-color: #1d2434;
+}
+
+.bg-faded-light-dark {
+  background-color: #354052;
+}
+
+.bg-orange {
+  background-color: #cc5417;
+}
+
+.bg-yellow {
+  background-color: #ffc16a;
+}
+
+.bg-pale-yellow {
+  background-color: #ffe5b0;
+}
+
+.bg-green {
+  background-color: #78b16c;
+}
+
+.bullet {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.white {
+  color: white;
+}
+
+.faded-black {
+  color: #1d2434;
 }

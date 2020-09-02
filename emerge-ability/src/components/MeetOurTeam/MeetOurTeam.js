@@ -5,25 +5,34 @@ import GreenLine from "../UI/GreenLine/GreenLine";
 
 const MeetOurTeam = (props) => {
   return (
-    <div className="give-top-space" id="meet-our-team">
+    <div
+      className="give-more-top-space give-more-bottom-space bg-pale-yellow"
+      id="meet-the-team"
+    >
       <div className="heading">
-        <h3>MEET THE TEAM</h3>
+        <h3>Meet the team</h3>
         <GreenLine />
       </div>
       <Row
         className="d-flex justify-content-center"
         style={{ margin: 0, padding: 0 }}
       >
-        <img
-          src={require("../../assets/images/Meet Our Team/Bhuvana Meenakshi -COO.jpeg")}
-          className="team-image"
-          alt="1"
-        />
-        <img
-          src={require("../../assets/images/Meet Our Team/Leena Haque- CEO.JPG")}
-          className="team-image"
-          alt="2"
-        />
+        <div>
+          <img
+            src={require("../../assets/images/Meet Our Team/Leena Haque- CEO.JPG")}
+            className="team-image"
+            alt="2"
+          />
+          <p className="semi-bold faded-black">Leena Haque- CEO</p>
+        </div>
+        <div>
+          <img
+            src={require("../../assets/images/Meet Our Team/Bhuvana Meenakshi -COO.jpeg")}
+            className="team-image"
+            alt="1"
+          />
+          <p className="semi-bold faded-black">Bhuvana Meenakshi -COO</p>
+        </div>
       </Row>
     </div>
   );

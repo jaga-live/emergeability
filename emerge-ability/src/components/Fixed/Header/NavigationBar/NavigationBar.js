@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import "./NavigationBar.css";
 
 const NavigationBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,11 @@ const NavigationBar = (props) => {
         />
         <NavbarBrand href="/">{props.brand ? props.brand : null}</NavbarBrand>
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav
+            className="mynavbar"
+            navbar
+            style={{ position: "absolute", right: 20 }}
+          >
             {props.routes.map((el, index) =>
               el.component ? (
                 <NavItem key={index}> {el.component}</NavItem>

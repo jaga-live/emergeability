@@ -4,7 +4,12 @@ import "./GreenLine.css";
 const GreenLine = (props) => {
   return (
     <div>
-      <div className="GreenLine"></div>
+      <div
+        className="GreenLine"
+        style={{
+          backgroundColor: props.color ? props.color : "",
+        }}
+      ></div>
     </div>
   );
 };

@@ -47,13 +47,22 @@ const SignUp = (props) => {
   };
 
   return (
-    <div className="give-top-space" id="signup">
+    <div className="give-more-top-space bg-green" id="signup">
       <div className="heading">
-        <h3>Signup to become a Champion</h3>
-        <GreenLine />
+        <h3 className="white">Signup to become a Champion</h3>
+        <GreenLine color="coral" />
       </div>
-      <div className="signup-container">
-        <form className="signup" onSubmit={submitHandler}>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScXxlMkISdHvFo39jmWA56Az1f1Vift3GdYTAw7oeeOFSU3Fg/viewform?embedded=true"
+        className="google-form"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >
+        Loading…
+      </iframe>
+      {/* <div className="signup-container"> */}
+      {/* <form className="signup" onSubmit={submitHandler}>
           <label>First Name</label>
           <Input
             spellCheck={false}
@@ -168,8 +177,8 @@ const SignUp = (props) => {
               Sign Up
             </Button>
           </div>
-        </form>
-      </div>
+        </form> */}
+      {/* </div> */}
     </div>
   );
 };
