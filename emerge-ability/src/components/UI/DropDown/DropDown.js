@@ -28,12 +28,14 @@ const MyDropDown = (props) => {
         {props.placeholder}
       </DropdownToggle>
       <DropdownMenu
+        style={{ outline: "none" }}
         onClick={() =>
           props.closeOnClick ? setIsOpen(false) : setIsOpen(true)
         }
       >
         {props.options.map((el, index) => (
           <DropdownItem
+            style={{ outline: "none" }}
             onClick={() => {
               props.closeOnClick ? setIsOpen(false) : setIsOpen(true);
               if (props.onClick) {

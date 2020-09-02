@@ -14,13 +14,15 @@ function App() {
   return (
     <div className="App bg-pale-sandal">
       <Header />
-      <Carousel images={carouselData} controls={false} />
-      {/* <SpecialPara /> */}
-      <FutureDiv />
-      <AboutUs />
-      <MeetOurTeam />
-      <SignUp />
-      <Footer />
+      <div id="home" style={{ marginTop: "55px" }}>
+        <Carousel images={carouselData} controls={false} />
+        {/* <SpecialPara /> */}
+        <FutureDiv />
+        <AboutUs />
+        <MeetOurTeam />
+        <SignUp />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = (props) => {
   return (
     <div>
-      <div className="Footer d-flex justify-content-between">
+      <div className="Footer d-flex justify-content-between flex-wrap">
         <h3 className="text-left">Emerge Ability</h3>
         <div className="contact-social-media">
           <img

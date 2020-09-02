@@ -7,6 +7,13 @@ const AboutUs = (props) => {
   return (
     <div>
       <Row className="zero">
+        <Col style={{ padding: 0 }} lg="6" md="12" sm="12" xs="12">
+          <img
+            src={require("../../assets/images/About Us/1.jpg")}
+            alt=" "
+            className="about-us-image"
+          />
+        </Col>
         <Col lg="6" md="12" sm="12" xs="12">
           <ScrollAnimation animateIn="animate__fadeInRight animate__faster">
             <div className="about-us" id="about-us">
@@ -46,13 +53,6 @@ const AboutUs = (props) => {
               </p>
             </div>
           </ScrollAnimation>
-        </Col>
-        <Col style={{ padding: 0 }} lg="6" md="12" sm="12" xs="12">
-          <img
-            src={require("../../assets/images/About Us/1.jpg")}
-            alt=" "
-            className="about-us-image"
-          />
         </Col>
       </Row>
     </div>

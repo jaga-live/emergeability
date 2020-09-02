@@ -7,16 +7,9 @@ const FutureDiv = (props) => {
   return (
     <div>
       <Row className="zero">
-        <Col style={{ padding: 0 }} lg="6" md="12" sm="12" xs="12">
-          <img
-            src={require("../../assets/images/About Us/1.jpg")}
-            alt=" "
-            className="about-us-image"
-          />
-        </Col>
         <Col lg="6" md="12" sm="12" xs="12">
-          <ScrollAnimation animateIn="animate__fadeInRight animate__faster">
-            <div className="about-us" id="about-us">
+          <ScrollAnimation animateIn="animate__fadeInLeft animate__faster">
+            <div className="about-us">
               <h3 className="bold">
                 <span className="dark-blue">A b o u t</span>
                 <span className="orange"> U s</span>
@@ -28,7 +21,7 @@ const FutureDiv = (props) => {
                 and consultancy.{" "}
               </p>
               <br />
-              <h3 id="our-mission" className="bold">
+              <h3 className="bold">
                 <span className="dark-blue">O u r &nbsp;M i s s i </span>
                 <span className="orange">o n</span>
               </h3>
@@ -41,7 +34,7 @@ const FutureDiv = (props) => {
                 21st Century.
               </p>
               <br />
-              <h3 id="our-vision" className="bold">
+              <h3 className="bold">
                 <span className="dark-blue">O u r &nbsp;V i s i</span>
                 <span className="orange"> o n</span>
               </h3>
@@ -53,6 +46,13 @@ const FutureDiv = (props) => {
               </p>
             </div>
           </ScrollAnimation>
+        </Col>
+        <Col style={{ padding: 0 }} lg="6" md="12" sm="12" xs="12">
+          <img
+            src={require("../../assets/images/About Us/1.jpg")}
+            alt=" "
+            className="about-us-image"
+          />
         </Col>
       </Row>
     </div>

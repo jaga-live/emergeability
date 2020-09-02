@@ -8,7 +8,10 @@ const Header = (props) => {
 
   useEffect(() => {
     setHeadetRoutes([
-      { name: "Home", to: "#home" },
+      {
+        name: "Home",
+        to: "#home",
+      },
       {
         component: (
           <DropDown
@@ -45,8 +48,14 @@ const Header = (props) => {
           />
         ),
       },
-      { name: "Meet the team", to: "#meet-the-team" },
-      { name: "Sign Up", to: "#signup" },
+      {
+        name: "Meet the team",
+        to: "#meet-the-team",
+      },
+      {
+        name: "Sign Up",
+        to: "#signup",
+      },
     ]);
   }, []);
 
@@ -54,6 +63,7 @@ const Header = (props) => {
     <NavigationBar
       backgroundColor="#A5997F"
       navLinkColor="black"
+      tabs
       brand={
         "Emerge Ability"
         // <img
