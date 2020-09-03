@@ -13,40 +13,43 @@ const Header = (props) => {
         to: "#home",
       },
       {
-        component: (
-          <DropDown
-            nav
-            inNavbar
-            color="black"
-            placeholder="About Us"
-            options={[
-              {
-                name: "What We Do ?",
-                onClick: () => {
-                  document.getElementById("what-we-do").scrollIntoView();
-                },
+        component: DropDown,
+        componentProps: {
+          nav: true,
+          inNavbar: true,
+          textColor: "white",
+          backgroundColor: "transparent",
+          activeTextColor: "#354052",
+          activeBackgroundColor: "white",
+          placeholder: "About Us",
+          closeOnClick: true,
+          options: [
+            {
+              name: "What We Do ?",
+              onClick: () => {
+                document.getElementById("what-we-do").scrollIntoView();
               },
-              {
-                name: "Our Initiatives",
-                onClick: () => {
-                  document.getElementById("our-initiatives").scrollIntoView();
-                },
+            },
+            {
+              name: "Our Initiatives",
+              onClick: () => {
+                document.getElementById("our-initiatives").scrollIntoView();
               },
-              {
-                name: "Our Mission",
-                onClick: () => {
-                  document.getElementById("about-us").scrollIntoView();
-                },
+            },
+            {
+              name: "Our Mission",
+              onClick: () => {
+                document.getElementById("about-us").scrollIntoView();
               },
-              {
-                name: "Our Vision",
-                onClick: () => {
-                  document.getElementById("about-us").scrollIntoView();
-                },
+            },
+            {
+              name: "Our Vision",
+              onClick: () => {
+                document.getElementById("about-us").scrollIntoView();
               },
-            ]}
-          />
-        ),
+            },
+          ],
+        },
       },
       {
         name: "Meet the team",
@@ -62,15 +65,18 @@ const Header = (props) => {
   return (
     <NavigationBar
       backgroundColor="#A5997F"
-      navLinkColor="black"
+      navLinkColor="white"
+      activeColor="#354052"
+      activeTextColor="#354052"
+      activeBackgroundColor="white"
       tabs
       brand={
-        "Emerge Ability"
-        // <img
-        //   className="top-logo"
-        //   src={require("../../../assets/images/top-logo.png")}
-        //   alt="logo"
-        // />
+        // "Emerge Ability"
+        <img
+          className="top-logo"
+          src={require("../../../assets/images/top-logo.png")}
+          alt="logo"
+        />
       }
       routes={HeaderRoutes}
     />

@@ -1,49 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React from "react"; // useState, useEffect
 import "./SignUp.css";
-import { Input, Button } from "reactstrap";
-import Select from "../UI/Select/Select";
+// import { Input, Button } from "reactstrap";
+// import Select from "../UI/Select/Select";
 import GreenLine from "../UI/GreenLine/GreenLine";
 
 const SignUp = (props) => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    interestedAs: "",
-    location: "",
-    whyChampion: "",
-    whatChallenges: "",
-    whichGoals: "",
-    website: "",
-  });
-  const [locationOptions, setLocationOptions] = useState([]);
+  // const [formData, setFormData] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   interestedAs: "",
+  //   location: "",
+  //   whyChampion: "",
+  //   whatChallenges: "",
+  //   whichGoals: "",
+  //   website: "",
+  // });
+  // const [locationOptions, setLocationOptions] = useState([]);
 
-  useEffect(() => {
-    const countryList = require("country-list");
-    setLocationOptions([...countryList.getNames()]);
-  }, []);
+  // useEffect(() => {
+  //   const countryList = require("country-list");
+  //   setLocationOptions([...countryList.getNames()]);
+  // }, []);
 
-  const changeHandler = (name, value) => {
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  // const changeHandler = (name, value) => {
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const valid = () => {
-    let requiredValues = [
-      formData.firstName,
-      formData.lastName,
-      formData.email,
-      formData.interestedAs,
-      formData.location,
-    ];
-    return requiredValues.every((el) => el.trim() !== "");
-  };
+  // const valid = () => {
+  //   let requiredValues = [
+  //     formData.firstName,
+  //     formData.lastName,
+  //     formData.email,
+  //     formData.interestedAs,
+  //     formData.location,
+  //   ];
+  //   return requiredValues.every((el) => el.trim() !== "");
+  // };
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-  };
+  // const submitHandler = (e) => {
+  //   e.preventDefault();
+  // };
 
   return (
     <div className="give-more-top-space" id="signup">
@@ -51,9 +51,10 @@ const SignUp = (props) => {
         <h3>
           Signup to become a <span className="dark-blue">Champion</span>
         </h3>
-        <GreenLine color="#ffe5b0" />
+        <GreenLine />
       </div>
       <iframe
+        title=" "
         src="https://docs.google.com/forms/d/e/1FAIpQLScXxlMkISdHvFo39jmWA56Az1f1Vift3GdYTAw7oeeOFSU3Fg/viewform?embedded=true"
         className="google-form"
         frameborder="0"

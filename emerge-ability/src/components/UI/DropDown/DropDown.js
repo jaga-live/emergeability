@@ -23,7 +23,19 @@ const MyDropDown = (props) => {
         caret
         color="primary"
         nav={props.nav}
-        style={{ color: props.color ? props.color : "white" }}
+        style={{
+          color: props.nav
+            ? props.active
+              ? props.activeTextColor
+                ? props.activeTextColor
+                : "white"
+              : props.textColor
+              ? props.textColor
+              : "white"
+            : props.textColor
+            ? props.textColor
+            : "white",
+        }}
       >
         {props.placeholder}
       </DropdownToggle>
@@ -35,7 +47,9 @@ const MyDropDown = (props) => {
       >
         {props.options.map((el, index) => (
           <DropdownItem
-            style={{ outline: "none" }}
+            style={{
+              outline: "none",
+            }}
             onClick={() => {
               props.closeOnClick ? setIsOpen(false) : setIsOpen(true);
               if (props.onClick) {
@@ -54,7 +68,14 @@ const MyDropDown = (props) => {
             <p
               style={{
                 outline: "none",
-                color: props.color ? props.color : "white",
+                margin: 0,
+                color: isOpen
+                  ? props.activeTextColor
+                    ? props.activeTextColor
+                    : "black"
+                  : props.textColor
+                  ? props.textColor
+                  : "black",
               }}
             >
               {el.name}

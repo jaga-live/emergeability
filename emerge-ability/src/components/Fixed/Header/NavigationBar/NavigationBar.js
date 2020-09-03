@@ -61,9 +61,34 @@ const NavigationBar = (props) => {
           >
             {props.routes.map((el, index) =>
               el.component ? (
-                <NavItem className="mynavitem" key={index}>
+                <NavItem
+                  className="mynavitem"
+                  key={index}
+                  onClick={(event) => activeToggle(index)}
+                  style={{
+                    backgroundColor: activeState[index]
+                      ? props.activeBackgroundColor
+                        ? props.activeBackgroundColor
+                        : "white !important"
+                      : props.backgroundColor
+                      ? props.backgroundColor
+                      : "transparent !important",
+                    color: activeState[index]
+                      ? props.activeTextColor
+                        ? props.activeTextColor
+                        : "grey !important"
+                      : props.navLinkColor
+                      ? props.navLinkColor
+                      : "black !important",
+                  }}
+                >
                   {" "}
-                  {el.component}
+                  {
+                    <el.component
+                      {...el.componentProps}
+                      active={activeState[index]}
+                    />
+                  }
                 </NavItem>
               ) : (
                 <NavItem className="mynavitem" key={index}>
@@ -71,7 +96,13 @@ const NavigationBar = (props) => {
                     active={activeState[index]}
                     onClick={(event) => activeToggle(index)}
                     style={{
-                      color: props.navLinkColor ? props.navLinkColor : "black",
+                      color: activeState[index]
+                        ? props.activeColor
+                          ? props.activeColor
+                          : "grey"
+                        : props.navLinkColor
+                        ? props.navLinkColor
+                        : "black",
                     }}
                     href={el.to}
                   >

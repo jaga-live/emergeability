@@ -14,9 +14,9 @@ const AboutUs = (props) => {
             className="about-us-image"
           />
         </Col>
-        <Col lg="6" md="12" sm="12" xs="12">
+        <Col lg="6" md="12" sm="12" xs="12" id="about-us">
           <ScrollAnimation animateIn="animate__fadeInRight animate__faster">
-            <div className="about-us" id="about-us">
+            <div className="about-us">
               <h3 className="bold">
                 <span className="dark-blue">A b o u t</span>
                 <span className="orange"> U s</span>

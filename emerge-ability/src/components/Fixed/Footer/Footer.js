@@ -23,7 +23,7 @@ const Footer = (props) => {
             name="instagram"
           />
         </div>
-        <p className="text-left">&copy; copyright by emerge ability</p>
+        <p className="text-left">&copy; copyright 2020 by emerge ability</p>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { Row } from "reactstrap";
 import "./MeetOurTeam.css";
 import GreenLine from "../UI/GreenLine/GreenLine";
-import ButtonWithIcon from "../UI/ButtonWithIcon/ButtonWithIcon";
+// import ButtonWithIcon from "../UI/ButtonWithIcon/ButtonWithIcon";
 
 const MeetOurTeam = (props) => {
   return (
