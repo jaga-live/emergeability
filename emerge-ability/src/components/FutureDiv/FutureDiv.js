@@ -6,22 +6,29 @@ import ScrollAnimation from "react-animate-on-scroll";
 const FutureDiv = (props) => {
   return (
     <div>
-      <Row className="zero">
-        <Col lg="6" md="12" sm="12" xs="12">
+      <Row className="zero my-flex">
+        <Col
+          lg="6"
+          md="12"
+          sm="12"
+          xs="12"
+          className="d-flex align-items-center justify-content-center flex-column"
+        >
           <ScrollAnimation animateIn="animate__fadeInLeft animate__faster">
-            <div className="about-us">
+            <div className="future-div">
               <h3 className="bold">
-                <span className="dark-blue">A b o u t</span>
-                <span className="orange"> U s</span>
+                <span className="dark-blue">E d u c a t</span>
+                <span className="orange"> i o n</span>
               </h3>
               <br />
               <p className="semi-bold dark">
-                We are an innovative initiative with the aim to maximize the
-                potential of individuals with cognitive differences via research
-                and consultancy.{" "}
+                Education is not a privilege, it is a fundamental human right.
+                The UNESCO: Global Education 2030 Agenda Sustainable Development
+                Goal (SDG) 4 on education calls for inclusive and equitable
+                quality education.
               </p>
               <br />
-              <h3 className="bold">
+              {/* <h3 className="bold">
                 <span className="dark-blue">O u r &nbsp;M i s s i </span>
                 <span className="orange">o n</span>
               </h3>
@@ -43,13 +50,13 @@ const FutureDiv = (props) => {
                 Enable individuals to reach their full potential by highlighting
                 their unique strengths/abilities and giving them the skills they
                 need to succeed in this new world.
-              </p>
+              </p> */}
             </div>
           </ScrollAnimation>
         </Col>
-        <Col style={{ padding: 0 }} lg="6" md="12" sm="12" xs="12">
+        <Col style={{ padding: 0 }} lg="6">
           <img
-            src={require("../../assets/images/About Us/1.jpg")}
+            src={require("../../assets/images/FutureDiv/education.jpg")}
             alt=" "
             className="about-us-image"
           />

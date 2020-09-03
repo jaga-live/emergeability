@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App bg-pale-sandal">
       <Header />
-      <div id="home" style={{ marginTop: "55px" }}>
+      <div id="home" style={{ marginTop: "60px" }}>
         <Carousel images={carouselData} controls={false} />
         {/* <SpecialPara /> */}
         <FutureDiv />

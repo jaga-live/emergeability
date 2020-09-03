@@ -1,13 +1,13 @@
 .team-image {
-  width: 250px;
-  height: 350px;
-  margin: 10px 30px;
+  width: 245px;
+  height: 345px;
+  margin: 10px 0;
 }
 
 @media (max-width: 600px) {
   .team-image {
-    width: 100px;
-    height: 150px;
+    width: 97px;
+    height: 148px;
   }
 }
 
@@ -34,4 +34,13 @@
 .contact-social-media p {
   margin: 0;
   font-size: x-small;
+}
+.contact-social-media a:hover,
+.contact-social-media a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.each-team {
+  margin: 20px;
 }

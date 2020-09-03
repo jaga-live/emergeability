@@ -2,6 +2,7 @@
   .mynavbar {
     position: absolute;
     right: 20;
+    border-bottom: transparent !important;
   }
 }
 

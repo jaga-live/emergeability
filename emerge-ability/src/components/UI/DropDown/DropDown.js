@@ -54,7 +54,8 @@ const MyDropDown = (props) => {
               props.closeOnClick ? setIsOpen(false) : setIsOpen(true);
               if (props.onClick) {
                 props.onClick(el.id, el.name);
-              } else if (el.onClick) {
+              }
+              if (el.onClick) {
                 el.onClick();
               } else {
                 return;

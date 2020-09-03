@@ -64,7 +64,9 @@ const NavigationBar = (props) => {
                 <NavItem
                   className="mynavitem"
                   key={index}
-                  onClick={(event) => activeToggle(index)}
+                  onClick={(event) => {
+                    activeToggle(index);
+                  }}
                   style={{
                     backgroundColor: activeState[index]
                       ? props.activeBackgroundColor
@@ -87,6 +89,7 @@ const NavigationBar = (props) => {
                     <el.component
                       {...el.componentProps}
                       active={activeState[index]}
+                      onClick={props.closeOnClick ? toggle : () => {}}
                     />
                   }
                 </NavItem>
@@ -94,7 +97,12 @@ const NavigationBar = (props) => {
                 <NavItem className="mynavitem" key={index}>
                   <NavLink
                     active={activeState[index]}
-                    onClick={(event) => activeToggle(index)}
+                    onClick={(event) => {
+                      if (props.closeOnClick) {
+                        toggle();
+                      }
+                      activeToggle(index);
+                    }}
                     style={{
                       color: activeState[index]
                         ? props.activeColor

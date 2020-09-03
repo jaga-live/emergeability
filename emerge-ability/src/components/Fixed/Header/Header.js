@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import "./Header.css";
 import NavigationBar from "./NavigationBar/NavigationBar";
 import DropDown from "../../UI/DropDown/DropDown";
@@ -69,14 +69,22 @@ const Header = (props) => {
       activeColor="#354052"
       activeTextColor="#354052"
       activeBackgroundColor="white"
+      closeOnClick
       tabs
       brand={
-        // "Emerge Ability"
-        <img
-          className="top-logo"
-          src={require("../../../assets/images/top-logo.png")}
-          alt="logo"
-        />
+        <div className="d-flex flex-row justify-content-center align-items-center">
+          <img
+            className="top-logo"
+            src={require("../../../assets/images/top-logo.png")}
+            alt="logo"
+          />
+          <p style={{ margin: "0 20px" }}>
+            EmergeAbility <br />
+            <span style={{ fontSize: 14, color: "#1d2434" }}>
+              Abilities Beyond Boundaries
+            </span>
+          </p>
+        </div>
       }
       routes={HeaderRoutes}
     />

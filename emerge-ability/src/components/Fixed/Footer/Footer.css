@@ -26,3 +26,9 @@
   margin: 0;
   font-size: x-small;
 }
+
+.contact-social-media a:hover,
+.contact-social-media a:active {
+  color: white;
+  text-decoration: none;
+}
