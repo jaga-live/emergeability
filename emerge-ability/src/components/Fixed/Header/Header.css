@@ -1,13 +1,26 @@
 .top-logo {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 65px;
   padding: 0;
   margin: 0;
 }
 
+.brand-div p {
+  margin: 20px;
+}
+
 @media (max-width: 600px) {
   .top-logo {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+  }
+  .brand-div {
+    margin-right: 10px;
+  }
+  .brand-div p {
+    font-size: 13px !important;
+  }
+  .brand-div span {
+    font-size: 10px;
   }
 }

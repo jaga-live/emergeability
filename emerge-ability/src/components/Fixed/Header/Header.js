@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import NavigationBar from "./NavigationBar/NavigationBar";
 import DropDown from "../../UI/DropDown/DropDown";
@@ -72,13 +72,13 @@ const Header = (props) => {
       closeOnClick
       tabs
       brand={
-        <div className="d-flex flex-row justify-content-center align-items-center">
+        <div className="d-flex flex-row justify-content-center align-items-center brand-div">
           <img
             className="top-logo"
             src={require("../../../assets/images/top-logo.png")}
             alt="logo"
           />
-          <p style={{ margin: "0 20px" }}>
+          <p>
             EmergeAbility <br />
             <span style={{ fontSize: 14, color: "#1d2434" }}>
               Abilities Beyond Boundaries

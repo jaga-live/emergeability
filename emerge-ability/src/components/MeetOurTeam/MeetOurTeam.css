@@ -1,13 +1,14 @@
 .team-image {
   width: 245px;
-  height: 345px;
+  height: 245px;
   margin: 10px 0;
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {
   .team-image {
-    width: 97px;
-    height: 148px;
+    width: 150px;
+    height: 150px;
   }
 }
 

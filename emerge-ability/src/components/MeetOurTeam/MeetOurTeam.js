@@ -36,19 +36,19 @@ const MeetOurTeam = (props) => {
               alt=" "
               name="facebook"
             /> */}
-            <a href="#" className="fa fa-facebook"></a>
+            <i className="fa fa-facebook"></i>
             {/* <img
               src={require("../../assets/images/icons/social-icons/linkedin.svg")}
               alt=" "
               name="linkedin"
             /> */}
-            <a href="#" className="fa fa-linkedin"></a>
+            <i className="fa fa-linkedin"></i>
             {/* <img
               src={require("../../assets/images/icons/social-icons/instagram.svg")}
               alt=" "
               name="instagram"
             /> */}
-            <a href="#" className="fa fa-instagram"></a>
+            <i className="fa fa-instagram"></i>
           </div>
         </div>
         <div className="each-team">
@@ -59,7 +59,7 @@ const MeetOurTeam = (props) => {
           />
           <p className="semi-bold faded-black">Bhuvana Meenakshi -COO</p>
           <p className="font-size-small">
-            Co-founder | Socio- technology researcher | AR/VR/XR evangelist
+            Socio- Technology Research | AR/VR/XR Evangelist
           </p>
           <div className="contact-social-media" style={{ margin: "auto" }}>
             {/* <img
@@ -67,19 +67,19 @@ const MeetOurTeam = (props) => {
               alt=" "
               name="facebook"
             /> */}
-            <a href="#" className="fa fa-facebook"></a>
+            <i className="fa fa-facebook"></i>
             {/* <img
               src={require("../../assets/images/icons/social-icons/linkedin.svg")}
               alt=" "
               name="linkedin"
             /> */}
-            <a href="#" className="fa fa-linkedin"></a>
+            <i className="fa fa-linkedin"></i>
             {/* <img
               src={require("../../assets/images/icons/social-icons/instagram.svg")}
               alt=" "
               name="instagram"
             /> */}
-            <a href="#" className="fa fa-instagram"></a>
+            <i className="fa fa-instagram"></i>
           </div>
         </div>
       </Row>

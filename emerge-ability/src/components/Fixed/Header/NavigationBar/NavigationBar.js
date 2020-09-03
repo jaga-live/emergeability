@@ -36,7 +36,7 @@ const NavigationBar = (props) => {
     <div style={{ textAlign: "left" }} className="my-navbar-fixed">
       <Navbar
         color={props.backgroundColor ? props.backgroundColor : "light"}
-        style={{ backgroundColor: props.backgroundColor }}
+        style={{ backgroundColor: props.backgroundColor, flexDirection: "row" }}
         light
         expand="md"
       >

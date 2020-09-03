@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = (props) => {
   return (
-    <div>
+    <div className="bg-faded-light-dark white">
       <div className="Footer d-flex justify-content-between flex-wrap">
         <h3 className="text-left">Emerge Ability</h3>
         <div className="contact-social-media" style={{ margin: "auto" }}>
@@ -12,19 +12,19 @@ const Footer = (props) => {
               alt=" "
               name="facebook"
             /> */}
-          <a href="#" className="fa fa-facebook"></a>
+          <i className="fa fa-facebook"></i>
           {/* <img
               src={require("../../assets/images/icons/social-icons/linkedin.svg")}
               alt=" "
               name="linkedin"
             /> */}
-          <a href="#" className="fa fa-linkedin"></a>
+          <i className="fa fa-linkedin"></i>
           {/* <img
               src={require("../../assets/images/icons/social-icons/instagram.svg")}
               alt=" "
               name="instagram"
             /> */}
-          <a href="#" className="fa fa-instagram"></a>
+          <i className="fa fa-instagram"></i>
         </div>
         <p className="text-left">&copy; copyright 2020 by emerge ability</p>
       </div>

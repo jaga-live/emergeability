@@ -17,8 +17,8 @@ const FutureDiv = (props) => {
           <ScrollAnimation animateIn="animate__fadeInLeft animate__faster">
             <div className="future-div">
               <h3 className="bold">
-                <span className="dark-blue">E d u c a t</span>
-                <span className="orange"> i o n</span>
+                <span className="dark-blue">Abilities Beyond Bounda</span>
+                <span className="orange">ries</span>
               </h3>
               <br />
               <p className="semi-bold dark">

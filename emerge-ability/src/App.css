@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.content {
+  margin-top: 85px;
+}
+
+@media (max-width: 700px) {
+  .content {
+    margin-top: 50px;
+  }
+}
+
 .text-left {
   text-align: left;
 }
@@ -35,6 +45,10 @@
   /* color: #3e86c6; */
   color: #cc5417;
   padding-bottom: 20px;
+}
+
+.heading h3 {
+  font-weight: bold;
 }
 
 .green {

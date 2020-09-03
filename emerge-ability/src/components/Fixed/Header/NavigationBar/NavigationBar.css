@@ -14,6 +14,12 @@
   .mynavbar li {
     float: left;
   }
+  .navbar-brand {
+    margin: 0 !important;
+  }
+  .navbar {
+    padding: 0 !important;
+  }
 }
 
 .mynavitem {
