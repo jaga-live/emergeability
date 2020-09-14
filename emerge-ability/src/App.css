@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .content {
-  margin-top: 85px;
+  margin-top: 79px;
 }
 
 @media (max-width: 700px) {

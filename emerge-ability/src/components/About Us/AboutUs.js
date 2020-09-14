@@ -9,7 +9,7 @@ const AboutUs = (props) => {
       <Row className="zero">
         <Col style={{ padding: 0 }} lg="6" md="12" sm="12" xs="12">
           <img
-            src={require("../../assets/images/About Us/1.jpg")}
+            src={require("../../assets/Video/Brain Animi.gif")}
             alt=" "
             className="about-us-image"
           />
@@ -17,6 +17,8 @@ const AboutUs = (props) => {
         <Col lg="6" md="12" sm="12" xs="12" id="about-us">
           <ScrollAnimation animateIn="animate__fadeInRight animate__faster">
             <div className="about-us">
+              <br />
+              <br />
               <h3 className="bold">
                 <span className="dark-blue">A b o u t</span>
                 <span className="orange"> U s</span>

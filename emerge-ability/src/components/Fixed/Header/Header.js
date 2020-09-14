@@ -10,7 +10,7 @@ const Header = (props) => {
     setHeadetRoutes([
       {
         name: "Home",
-        to: "#home",
+        to: "#future-div",
       },
       {
         component: DropDown,
@@ -27,13 +27,7 @@ const Header = (props) => {
             {
               name: "What We Do ?",
               onClick: () => {
-                document.getElementById("what-we-do").scrollIntoView();
-              },
-            },
-            {
-              name: "Our Initiatives",
-              onClick: () => {
-                document.getElementById("our-initiatives").scrollIntoView();
+                document.getElementById("about-us").scrollIntoView();
               },
             },
             {
@@ -50,6 +44,10 @@ const Header = (props) => {
             },
           ],
         },
+      },
+      {
+        name: "Our Initiatives",
+        to: "#our-initiatives",
       },
       {
         name: "Meet the team",

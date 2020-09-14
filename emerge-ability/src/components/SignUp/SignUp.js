@@ -57,9 +57,9 @@ const SignUp = (props) => {
         title=" "
         src="https://docs.google.com/forms/d/e/1FAIpQLScXxlMkISdHvFo39jmWA56Az1f1Vift3GdYTAw7oeeOFSU3Fg/viewform?embedded=true"
         className="google-form"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
+        frameBorder="0"
+        marginHeight="0"
+        marginWidth="0"
       >
         Loading…
       </iframe>

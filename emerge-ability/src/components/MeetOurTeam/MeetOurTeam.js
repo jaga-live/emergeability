@@ -26,7 +26,7 @@ const MeetOurTeam = (props) => {
             className="team-image"
             alt="2"
           />
-          <p className="semi-bold faded-black">Leena Haque- CEO</p>
+          <p className="semi-bold faded-black">Leena Haque</p>
           <p className="font-size-small">
             Co-founder | User Experience Designer | Innovation Architect
           </p>
@@ -57,9 +57,10 @@ const MeetOurTeam = (props) => {
             className="team-image"
             alt="1"
           />
-          <p className="semi-bold faded-black">Bhuvana Meenakshi -COO</p>
+          <p className="semi-bold faded-black">Bhuvana Meenakshi</p>
           <p className="font-size-small">
-            Socio- Technology Research | AR/VR/XR Evangelist
+            Co-founder| Gender Gap and Socio- Technology Research
+            <br />| AR/VR/XR Evangelist | Mozillian| Wikimedian
           </p>
           <div className="contact-social-media" style={{ margin: "auto" }}>
             {/* <img
